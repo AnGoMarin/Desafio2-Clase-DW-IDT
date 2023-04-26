@@ -1,0 +1,212 @@
+/*
+
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+
+
+*/
+
+:root{
+    /* Color de Texto */
+    --color-red: hsl(0, 100%, 67%);
+    --color-yellow: hsl(39, 100%, 56%);
+    --color-green: hsl(166, 100%, 37%);
+    --color-blue: hsl(234, 85%, 45%);
+
+    --bg-slate-blue: hsl(252, 100%, 67%);
+    --bg-royal-blue: hsl(241, 81%, 54%);
+
+    --bg-violeta-azulado: hsla(256, 72%, 46%, 1);
+    --bg-azul-persiano: hsla(241, 72%, 46%, 0);
+
+    /* Neutros */
+    --white: hsl(0, 0%, 100%);
+    --azul-palido: hsl(221, 100%, 96%);
+    --lavanda: hsl(241, 100%, 89%);
+    --gris-oscuro-azulado: hsl(224, 30%, 27%);
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p{
+    font-size: 14px;
+}
+
+.bloque{
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 0px 4px 7px var(--gris-oscuro-azulado);
+}
+
+.bloque1{
+    flex: 1;
+    background-color: var(--bg-slate-blue);
+    background-image: linear-gradient(var(--bg-slate-blue), var(--bg-royal-blue));
+    text-align: center;
+    border-radius: 16px;
+    color: var(--lavanda);
+    padding: 30px 60px;   
+}
+
+.bloque2{
+    flex: 1;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 8px;
+    padding: 0 30px;
+}
+
+.circulo{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(var(--bg-violeta-azulado), var(--bg-azul-persiano));
+    border-radius: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.numero{
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.cien{
+    font-size: 12px;
+    font-weight: 500;
+    color: hsla(0, 16%, 84%, 0.385);
+}
+
+.blanco{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.azul-marino{
+    color: var(--gris-oscuro-azulado);
+}
+
+.recuadro1{
+    background-color: hsla(0, 100%, 97%, 0.909);
+    padding: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.recuadro1 > div{
+    display: flex;
+    gap: 6px;
+}
+
+.recuadro2{
+    background-color: hsla(55, 65%, 97%, 0.893);
+    padding: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.recuadro2 > div{
+    display: flex;
+    gap: 8px;
+}
+
+.recuadro3{
+    background-color: hsla(77, 47%, 97%, 0.924);
+    padding: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.recuadro3 > div{
+    display: flex;
+    gap: 8px;
+}
+
+.recuadro4{
+    background-color: hsla(254, 69%, 94%, 0.943);
+    padding: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.recuadro4 > div{
+    display: flex;
+    gap: 8px;
+}
+
+.btn{
+    color: white;
+    background-color: var(--gris-oscuro-azulado);
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    margin-top: 50px;
+    border-radius: 48px;
+}
+
+.porcentaje{
+    color: var(--gris-oscuro-azulado);
+    font-weight: 800;
+}
+
+.gris{
+    color: hsla(0, 3%, 56%, 0.385);
+    font-weight: 600;
+}
+
+.Reaction{
+    color: var(--color-red);
+}
+
+.Memory{
+    color: var(--color-yellow);
+}
+
+.Verbal{
+    color: var(--color-green);
+}
+
+.Visual{
+    color: var(--color-blue);
+}
+
